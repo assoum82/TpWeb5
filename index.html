@@ -1,53 +1,24 @@
-<html>
-<head>
-    
-    
-</head>
-<body>
-    
-    
-<h1>Assignment 10</h1>
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form Material Design</title>
+    <!--=======Font Open Sans======-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!--=======Custom Style======-->
+    <link rel="stylesheet" href="css/style.css">
 
-<div id="container">
-    <div class="Num">
+  </head>
+  <body>
+  <div class="form-box">
+    <div class="head"><img src="images/logo.png" width="500"><p>Guess my number, 1-100!</p></div>     
+      
     <form>
-<label class="label1">enter a value:</label>
-<input type="text" id="num" />
-        
-        
-<input type="button" id="clickme" value="Guess" onclick="main()" />
-        <br>
-        <p id="result">So what are you weiting !</p>
-</form>
-
-<script>
-    function GuessNum(){
-    var value1;
-    var value2;
-    value1 = document.getElementById("num").value;
-    value2 = Math.floor(Math.random() * 10) + 1;
-        console.log(value2);
-    if (value1 > value2){
-        document.getElementById("result").innerHTML = "smaller malek !";
-    }
-    else{
-        if(value1 == value2){
-             document.getElementById("result").innerHTML = "piiiiii !";
-            document.getElementById('clickme').disabled = true;
-        }
-        else{
-        document.getElementById("result").innerHTML = "bigger malek !";
-        }
-    }
-    
-}
-    function main(){
-        
-        GuessNum();
-        
-    }
-
-    
-</script>
+        <input type="submit" value="Start Playing !" class="btn" onclick="GuessNum()" />
+    </form>
+  </div>
+      <script src="js/script.js"></script>
 </body>
 </html>
+
+               
