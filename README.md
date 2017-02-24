@@ -1,5 +1,5 @@
 # TpWeb5
-Find the misterious number ! a simple javascript game for the web tp.
+Find the mysterious number ! a simple javascript game using the math random and a mysterious theme ( html & css ) as a web homework.
 
 
 ### Screenshot
